@@ -139,6 +139,8 @@ body {
 .meme__input {
   appearance: none;
   grid-area: input;
+  width: 0;
+  height: 0;
 } 
 
 .meme__icon {
