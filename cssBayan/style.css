@@ -40,16 +40,6 @@ body {
   padding: 1.5rem;
 }
 
-@media (min-width: 1024px) {
-  .container:hover .meme__title {
-    color: #b4b3b3;
-  }
-
-  .container:hover .meme__icon span {
-    width: 2.6rem;
-  } 
-}
-
 @media (min-width: 1920px) {
   .container {
     max-width: 120rem;
@@ -95,20 +85,10 @@ body {
   border-top: 0.1rem solid #737373;
 } 
 
-@media (min-width: 1024px) {
-  .meme {
-    cursor: pointer;
-  }
-
-  .meme:hover .meme__image {
-    height: 100%;
-  }
-}
-
 .meme__title {
   grid-area: title;
   font-size: 1.8rem;
-  color: #b4b3b3;
+  color: #2508e6;
 } 
 
 @media (min-width: 320px) {
@@ -120,13 +100,6 @@ body {
 @media (min-width: 820px) {
   .meme__title{
     font-size: 3rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .meme__title {
-    cursor: pointer;
-    color: #fff;
   }
 }
 
@@ -152,7 +125,7 @@ body {
   display: inline-block;
   width: 2rem;
   height: 0.3rem;
-  background-color: #b4b3b3;
+  background-color: #2508e6;
   transition: 0.3s;
 } 
 
@@ -162,17 +135,6 @@ body {
 
 .meme__icon span:last-child {
   transform: translateX(-2.4rem);
-}
-
-@media (min-width: 1024px) {
-  .meme__icon span {
-    width: 0;
-    cursor: pointer;
-  } 
-
-  .meme__icon span:last-child {
-    transform: translateX(-3rem);
-  }
 }
 
 .meme__image {
@@ -186,12 +148,6 @@ body {
 @media (min-width: 820px) {
   .meme__image {
     max-width: 60rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .meme__image img {
-    cursor: pointer;
   }
 }
 
@@ -216,7 +172,7 @@ body {
 }
 
 .meme__input:checked ~ .meme__icon span {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .meme__input:checked ~ .meme__icon span:first-child {
@@ -227,8 +183,38 @@ body {
   transform: translateX(-2.4rem) rotate(-45deg);
 }
 
-@media (min-width: 1024px) {
-  .meme__input:checked ~ .meme__icon span:last-child {
-    transform: translateX(-3rem) rotate(-45deg);
+@media (hover: hover) {
+ .container:hover .meme__title {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .meme__icon span {
+    width: 0rem;
+  }
+
+  .container:hover .meme__icon span {
+    width: 2rem;
+    background-color: #fff;
+  }
+
+  .meme:hover {
+    cursor: pointer;
+  }
+
+  .meme:hover .meme__image {
+    height: 100%;
+  }
+
+  .meme__title:hover {
+    cursor: pointer;
+  }
+
+  .meme__icon span:hover {
+    cursor: pointer;
+  }
+
+  .meme__image img {
+    cursor: pointer;
   }
 }
