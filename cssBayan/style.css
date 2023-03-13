@@ -40,6 +40,10 @@ body {
   padding: 1.5rem;
 }
 
+.container:active{
+  background-color: #31313197;
+}
+
 @media (min-width: 1920px) {
   .container {
     max-width: 120rem;
@@ -52,6 +56,10 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
+}
+
+.page-title:active {
+  color: #c19f7a;
 }
 
 @media (min-width: 320px) {
@@ -85,11 +93,17 @@ body {
   border-top: 0.1rem solid #737373;
 } 
 
+.meme:active {
+  background-color: #31313197;
+}
+
 .meme__title {
   grid-area: title;
   font-size: 1.8rem;
   color: #2508e6;
-} 
+}
+
+
 
 @media (min-width: 320px) {
   .meme__title{
@@ -217,4 +231,8 @@ body {
   .meme__image img {
     cursor: pointer;
   }
+}
+
+.meme:active .meme__title{
+  color: #c19f7a;
 }
